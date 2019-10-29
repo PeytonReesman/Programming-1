@@ -1,6 +1,6 @@
 //Project:  Program 5
 //Author:   Peyton A Reesman
-//Date:     Oct. 21, 2019
+//Date:     Oct. 22, 2019
 //Version:  1.1
 
 import java.util.Scanner;
@@ -20,7 +20,7 @@ public class peytonreesmanprogram5 {
 		double changeBack = 0.00;
 		
 		
-		do
+		do //add a do-while loop to make sure the menu shows up at least once
 		{
 			displayMenu();
 			menuChoice = keyboard.nextInt();
