@@ -12,7 +12,7 @@ public class program7 {
 		// TODO Auto-generated method stub
 
 		Random randomNumbers = new Random();
-		
+		//two teams that play 9 innings. so 2 columns and 9 rows
 		int[][] scores = new int[2][9];
 				
 		Scanner keyboard = new Scanner(System.in);
@@ -23,11 +23,11 @@ public class program7 {
 		int teamTwoTotal = 0;
 		String teamOne = "";
 		String teamTwo = "";
-		
+		//Collect team names and the game they are playing. essentially the menu
 		System.out.println("Welcome to the Baseball Game! \nWhat are the names of the teams playing? \nPress enter after each team name");
 		String teamOneTitle = teamOneName.nextLine();
 		String teamTwoTitle = teamOneName.nextLine();
-		
+		//loop through and collect random number between 0-5 for each inning for team one
 		for(int row = 0; row < 2; row++)
 		{
 			
@@ -67,9 +67,9 @@ public class program7 {
 			}
 			
 		}
-		
+		//display final score 
 		System.out.println("\nFinal Score: \t" + teamOneTitle + ": " + teamOneTotal + "\t" + teamTwoTitle + ": " + teamTwoTotal + "\t");
-		
+		//display the winner based off of the score shown
 		if(teamOneTotal>teamTwoTotal)
 		{
 			System.out.println("\n" + teamOneTitle + " has won!");
@@ -79,7 +79,7 @@ public class program7 {
 			System.out.println("\n" + teamTwoTitle + " has won!");
 		}
 		
-		
+		//close all
 		keyboard.close();
 		teamOneName.close();
 		teamTwoName.close();
