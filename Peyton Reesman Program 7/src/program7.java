@@ -31,14 +31,18 @@ public class program7 {
 		for(int row = 0; row < 2; row++)
 		{
 			
-			for(int col = 0; col < 9; col++)
+			for(int col = 0; col < 9; col++) //switch these two because you do each column for a baseball game not each row
 			{
+				
+				//innings [row][col] = randomNumber.nextInt(10);
+				
+				
 				//collect info for team 1
 				if(row==0)
 				{
 					scores[row][col] = randomNumbers.nextInt(5);
 					teamOneTotal += scores[row][col];
-					teamOne = teamOne + scores [row][col] + "\t" ;
+					teamOne = teamOne + scores [row][col] + "\t" ; //only need teamOneTotal += innings[row][col];
 				}
 				
 				//collect info for team 2
